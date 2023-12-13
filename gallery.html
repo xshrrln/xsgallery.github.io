@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;1,100&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100&display=swap');
+        @import url('https://fonts.cdnfonts.com/css/betterworks');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;1,100&display=swap');
+    
+        ul{
+            font-family: Arial;
+            list-style-type:none ;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #878787;
+        }
+        li{
+            float: left;
+            margin-left: 20%;
+        }
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px ;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: #000;
+        }
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0 20px 0 20px;
+            color: #fff;
+        }
+        .container .heading{
+            width: 50%;
+            padding-bottom: 50px;
+        }
+        .container .heading h3{
+            font-size: 3em;
+            font-weight: bolder;
+            border-bottom: 3px solid #fff;
+            padding-bottom: 10px;
+        }
+        .container .heading h3 span{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 100;
+        }
+        .container .box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .container .box .dream{
+            display: flex;
+            flex-direction: column;
+            width: 32.5%;
+        }
+        .container .box .dream img{
+            width: 100%;
+            padding-bottom: 15px;
+        }   
+        button{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            background-color: transparent;
+            border: none;
+            gap: 30px;
+            padding: 10px 20px;
+            margin-top: 80px;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .button{
+            text-align: center;
+        }
+        button a{
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            padding: 5px;
+            font-size: large;
+        }
+        button::after {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 90%;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        button:last-child::after {
+            display: none;
+        }
+
+        button a:hover{
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transition: .8s ease-in;
+            
+        }
+        @media only screen and (max-width: 769px) {
+            .container .box .dream{
+                width: 100%;
+                padding-left: 20px;
+            }
+        }
+        @media only screen and (max-width: 643px) {
+            .container .heading{
+                width: 100%;
+            }
+            .container .heading h3{
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #000;">
+    <div class="container" >
+        <div class="heading">
+            <h3>Photo <span>Gallery</span></h3>
+        </div>
+        <div class="box">
+            <div class="dream">
+                <img src="images/3.JPG">
+                <img src="images/8.jpg">
+                <img src="images/13.jpg">
+                <img src="images/15.jpg">
+                <img src="images/46.jpg">
+                <img src="images/47.png">
+                <img src="images/48.jpg">
+                <img src="images/50.jpg">
+                <img src="images/73.jpg">
+                <img src="images/24.jpg">
+                <img src="images/32.jpg">
+                <img src="images/29.jpg">
+            </div>
+            <div class="dream">
+                <img src="images/16.jpg">
+                <img src="images/22.jpg">
+                <img src="images/27.WEBP">
+                <img src="images/28.jpg">
+                <img src="images/43.jpg">
+                <img src="images/30.jpg">
+                <img src="images/65.jpeg">
+                <img src="images/75.png">
+                <img src="images/72.png">
+                <img src="images/74.png">
+                <img src="images/31.jpg">
+                <img src="images/33.JPG">
+            </div>
+            <div class="dream">
+                
+              
+                
+                <img src="images/34.jpg">
+                <img src="images/35.JPG">
+                <img src="images/36.JPG">
+                <img src="images/37.jpg">
+                <img src="images/38.jpg">
+                <img src="images/39.jpg">
+                <img src="images/40.JPG">
+                <img src="images/41.jpg">
+                <img src="images/42.jpg">
+                <img src="images/43.jpg">
+                <img src="images/45.jpg">
+                <img src="images/76.jpg">
+               
+                
+            </div>
+            
+        </div>
+        <div class="button">
+            <button><a href="index.html">Home</a></button>
+            <button><a href="about.html">About Me</a></button>
+        </div>
+    </div>
+    
+</body>
+</html>

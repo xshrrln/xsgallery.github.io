@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100&display=swap');
+        @import url('https://fonts.cdnfonts.com/css/betterworks');
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;1,100&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #080808;
+        }
+
+        #about .about_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            color: #fff;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 54px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+        }    
+        h4{
+            margin-top: 140px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 100;
+            font-size: 20px;
+        }
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+        }
+        
+        button{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            background-color: transparent;
+            border: none;
+            gap: 30px;
+            padding: 10px 20px;
+            margin-top: 120px;
+            position: relative;
+        
+        }
+        .button{
+            text-align: center;
+        }
+        button a{
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            padding: 5px;
+            font-size: large;
+        }
+        button::after {
+            content: "";
+            display: block;
+            width: 2px;
+            height: 90%;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+
+        button:last-child::after {
+            display: none;
+        }
+
+        button a:hover{
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transition: .8s ease-in;
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="about">
+        <div class="about_container">   
+            <div class="col-right">
+                <h1 class="section-title">ABOUT <span>ME</span></h1>
+                <h4>Hello, I'm Sherralene Edusma!</h4>
+                <p>I'm a first-year IT student at Bukidnon State University, where I'm diving into the dynamic world of Information Technology. Born on July 17, 2004, in the heart of St. Peter, Malaybalay City, I carry with me a passion for the arts, music, and poems. I find solace in the intricate beauty of code and the rhythm of creativity. As an ISFJ personality, I'm inherently introverted, but don't let that fool you—I'm a lot of fun to be around once you get to know me. I believe that life is an intricate blend of algorithms and emotions, and I strive to explore both aspects with equal enthusiasm. This website serves as a canvas for my journey through the fascinating realm of IT, intertwined with my love for artistic expression. Join me as I navigate the binary landscapes and poetic verses, discovering the harmony that exists between the logical and the creative. Let's embark on this adventure together!</p>
+            </div>
+        </div>
+        <div class="button">
+            <button><a href="index.html">Home</a></button>
+            <button><a href="gallery.html">Gallery</a></button>
+        </div>
+    </section>
+</body>
+</html>
