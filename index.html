@@ -36,7 +36,7 @@
             display: block;
             width: 2px;
             height: 90%;
-            background-color: #fff;
+            background-color: red;
             position: absolute;
             top: 50%;
             right: 0;
@@ -48,9 +48,10 @@
         }
 
         button a:hover{
-            border-top: 2px solid #fff;
-            border-bottom: 2px solid #fff;
-            transition: .8s ease-in;
+            border-top: 2px solid red;
+            border-bottom: 2px solid red;
+            transition: .3s ease-in;
+            color: red;
             
         }
         h1{
@@ -65,15 +66,8 @@
         .cont{
             padding: 125px;
         }
-        footer{
-            background-color: #1a1a1a;
-            bottom: 0;
-            width: 100%;
-            padding: 3px;
-            position: fixed;
-        }
-        p{
-            font-family: 'Montserrat', sans-serif;
+        h1 span{
+            color: red;
         }
         @media only screen and (max-width: 769px) {
 
@@ -95,15 +89,12 @@
         
         
         <div class="cont">
-            <h1>Sherralene Edusma</h1>
+            <h1><span>Sherralene</span> Edusma</h1>
             <div class="button">
                 <button><a href="gallery.html">Gallery</a></button>
                 <button><a href="about.html">About me</a></button>
             </div>
         </div>
     </section>
-    <footer>
-        <p>&copy;Sherralene Edusma 2023. All rights Reserved</p>
-    </footer>
 </body>
 </html>
