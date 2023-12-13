@@ -34,6 +34,9 @@
             font-family: 'Times New Roman', Times, serif;
             font-size: 54px;
         }
+        h1 span, h4 span, p span{
+            color: red;
+        }
 
         h2 {
             font-family: 'Montserrat', sans-serif;
@@ -41,15 +44,12 @@
         }    
         h4{
             margin-top: 140px;
-            font-family: 'Montserrat', sans-serif;
             font-weight: 100;
-            font-size: 20px;
         }
-        p{
+        h4, p{
             font-family: 'Montserrat', sans-serif;
-            font-size: 20px;
+            font-size: 24px;
         }
-        
         button{
             font-family: 'Montserrat', sans-serif;
             font-weight: bold;
@@ -76,7 +76,7 @@
             display: block;
             width: 2px;
             height: 90%;
-            background-color: #fff;
+            background-color: red;
             position: absolute;
             top: 50%;
             right: 0;
@@ -88,9 +88,23 @@
         }
 
         button a:hover{
-            border-top: 2px solid #fff;
-            border-bottom: 2px solid #fff;
-            transition: .8s ease-in;
+            border-top: 2px solid red;
+            border-bottom: 2px solid red;
+            transition: .3s ease-in;
+            color: red;
+        }
+        footer{
+            background-color: #1a1a1a;
+            bottom: 0;
+            width: 100%;
+            padding: 3px;
+            position: fixed;
+        }
+        .footer p{
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            text-align: center;
+            justify-content: center;
             
         }
     </style>
@@ -100,14 +114,19 @@
         <div class="about_container">   
             <div class="col-right">
                 <h1 class="section-title">ABOUT <span>ME</span></h1>
-                <h4>Hello, I'm Sherralene Edusma!</h4>
-                <p>I'm a first-year IT student at Bukidnon State University, where I'm diving into the dynamic world of Information Technology. Born on July 17, 2004, in the heart of St. Peter, Malaybalay City, I carry with me a passion for the arts, music, and poems. I find solace in the intricate beauty of code and the rhythm of creativity. As an ISFJ personality, I'm inherently introverted, but don't let that fool you—I'm a lot of fun to be around once you get to know me. I believe that life is an intricate blend of algorithms and emotions, and I strive to explore both aspects with equal enthusiasm. This website serves as a canvas for my journey through the fascinating realm of IT, intertwined with my love for artistic expression. Join me as I navigate the binary landscapes and poetic verses, discovering the harmony that exists between the logical and the creative. Let's embark on this adventure together!</p>
+                <h4>Hello, I'm <span>Sherralene Edusma</span>!</h4>
+                <p>I'm a first-year IT student at Bukidnon State University, where I'm diving into the dynamic world of Information Technology. Born on <span>July 17, 2004</span>, in the heart of <span>St. Peter, Malaybalay City</span>, I carry with me a passion for the arts, music, and poems. I find solace in the intricate beauty of code and the rhythm of creativity. As an <span>ISFJ</span> personality, I'm inherently introverted, but don't let that fool you—I'm a lot of fun to be around once you get to know me. I believe that life is an intricate blend of algorithms and emotions, and I strive to explore both aspects with equal enthusiasm. This website serves as a canvas for my journey through the fascinating realm of IT, intertwined with my love for artistic expression. Join me as I navigate the binary landscapes and poetic verses, discovering the harmony that exists between the logical and the creative.<span>Let's embark on this adventure together</span>!</p>
             </div>
         </div>
         <div class="button">
             <button><a href="index.html">Home</a></button>
             <button><a href="gallery.html">Gallery</a></button>
         </div>
+    </section>
+    <section>
+        <footer class="footer">
+            <p>&copy;Sherralene Edusma 2023. All Rights Reserved.</p>
+        </footer>
     </section>
 </body>
 </html>
